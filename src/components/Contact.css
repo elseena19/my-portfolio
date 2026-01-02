@@ -1,0 +1,108 @@
+.contact-section {
+  position: relative;
+  padding: 120px 0;
+  background: #020617;
+  overflow: hidden;
+}
+
+/* Background animation */
+.contact-bg-animation {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.25;
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+.contact-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Glass Card */
+.contact-card {
+  width: 100%;
+  max-width: 750px;
+  padding: 56px 40px;
+  text-align: center;
+  border-radius: 28px;
+  border: 1px solid rgba(229, 231, 235, 0.2);
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(20px);
+}
+
+/* Label */
+.contact-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #9ca3af;
+}
+
+/* Title */
+.contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 16px 0 32px;
+}
+
+/* Buttons */
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.contact-btn {
+  padding: 12px 26px;
+  font-size: 15px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Primary Gradient */
+.contact-btn.primary {
+  color: #ffffff;
+  background: linear-gradient(90deg, #22d3ee, #a855f7);
+}
+
+.contact-btn.primary:hover {
+  opacity: 0.9;
+}
+
+/* Secondary Outline */
+.contact-btn.secondary {
+  color: #e5e7eb;
+  border: 1px solid rgba(39, 55, 85, 0.137);
+  background: linear-gradient(90deg, #22d3ee, #a855f7);
+}
+
+.contact-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Note */
+.contact-note {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+}
