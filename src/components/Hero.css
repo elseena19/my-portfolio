@@ -104,3 +104,45 @@
   border-radius: 50%;
   box-shadow: 0 0 10px #22c55e;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .hero-left {
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  .hero-right {
+    margin-top: 24px;
+  }
+}

@@ -223,3 +223,29 @@
 .project-links-popup a:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+
+  .projects-grid,
+  .experience-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card,
+  .experience-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .project-card h3,
+  .experience-card h3 {
+    font-size: 18px;
+  }
+
+  .project-desc,
+  .experience-desc,
+  .experience-card li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

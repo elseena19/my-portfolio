@@ -106,3 +106,23 @@
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 24px 18px;
+  }
+
+  .contact-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-buttons a,
+  .contact-buttons button {
+    width: 100%;
+  }
+}

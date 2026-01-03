@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
+}

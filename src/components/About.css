@@ -172,9 +172,79 @@
   color: #9ca3af;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
+/* =========================
+   ABOUT – MOBILE FIX (FINAL)
+========================= */
+@media (max-width: 768px) {
+
+  /* prevent side scroll */
+  .about-section {
+    padding: 64px 16px;
+    overflow-x: hidden;
+  }
+
+  /* header */
+  .about-header {
+    padding: 0 4px;
+    margin-bottom: 20px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  /* 🔥 IMPORTANT: grid → single column */
   .about-wrapper {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* glass cards */
+  .glass-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .about-left p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about-points li {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* stats → stacked */
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  /* profile card */
+  .profile-card {
+    margin-top: 8px;
+  }
+
+  .profile-ring {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-card h3 {
+    font-size: 20px;
+  }
+
+  .profile-info {
+    font-size: 13px;
   }
 }
